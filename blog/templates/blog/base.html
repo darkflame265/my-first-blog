@@ -15,8 +15,14 @@
                 <p class="top-menu">안녕하세요 {{ user.username }}님 <small>(<a href="{% url 'logout' %}">Log out</a>)</small></p>
             {% else %}
                 <a href="{% url 'login' %}" class="top-menu"><span class="glyphicon glyphicon-lock"></span></a>
+                <a href="{% url 'space' %}" class="top-menu"><span class="glyphicon glyphicon-asterisk"></span></a>
+                <a href="{% url 'space2' %}" class="top-menu"><span class="glyphicon glyphicon-cloud"></span></a>
+                <a href="{% url 'space3' %}" class="top-menu"><span class="glyphicon glyphicon-fire"></span></a>
+                <a href="{% url 'space4' %}" class="top-menu"><span class="glyphicon glyphicon-plane"></span></a>
+                <a href="{% url 'space5' %}" class="top-menu"><span class="glyphicon glyphicon-unchecked"></span></a>
+                <a href="{% url 'space6' %}" class="top-menu"><span class="glyphicon glyphicon-thumbs-up"></span></a>
             {% endif %}
-            <h1><a href="/">기희의 실험 블로그</a></h1>
+            <h1><a href="/">고등래퍼 팬카페</a></h1>
         </div>
         <div class="content container">
             <div class="row">

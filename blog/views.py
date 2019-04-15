@@ -120,3 +120,28 @@ def signin(request):
 def sign_out(request):
     logout(request)
     return redirect('post_list')
+
+
+def space(request):
+    form = LoginForm()
+    return render(request, 'blog/space.html', {'form': form})
+
+def space2(request):
+    form = LoginForm()
+    return render(request, 'blog/space2.html', {'form': form})
+
+def space3(request):
+    form = LoginForm()
+    return render(request, 'blog/space3.html', {'form': form})
+
+def space4(request):
+    form = LoginForm()
+    return render(request, 'blog/space4.html', {'form': form})
+
+def space5(request):
+    form = LoginForm()
+    return render(request, 'blog/space5.html', {'form': form})
+
+def space6(request):
+    form = LoginForm()
+    return render(request, 'blog/space6.html', {'form': form})

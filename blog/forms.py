@@ -24,8 +24,8 @@ class UserForm(forms.ModelForm):
         fields = ['username', 'email', 'password']
         widgets = {
             'username': forms.TextInput(attrs={'class': 'form-control', 'placeholder':'15자 이내로 입력 가능합니다.'}),
-            'email': forms.EmailInput(attrs={'class': 'form-control'}),
-            'password' : forms.PasswordInput(attrs={'class': 'form-control'}),
+            'email': forms.EmailInput(attrs={'class': 'form-control', 'placeholder':'example@naver.com'}),
+            'password' : forms.PasswordInput(attrs={'class': 'form-control', }),
         }
         labels = {
             'username': '닉네임',
